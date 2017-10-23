@@ -1,1 +1,3 @@
-Katie Maxwell Blue 26jessye maxwell 25 red
+katie,maxwell,26,blue
+jessye,maxwell,25,red
+harriet,benbow,27,blue
