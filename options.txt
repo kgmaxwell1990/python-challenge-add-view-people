@@ -1,3 +1,5 @@
 katie,maxwell,26,blue
 jessye,maxwell,25,red
 harriet,benbow,27,blue
+finbar,maxwell,28,blue
+hanna,torrens-spence,2,red

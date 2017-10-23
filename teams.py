@@ -19,6 +19,23 @@ def add_person():
     
     with open("options.txt", "a") as people_file:
         people_file.write(line)
+   
+        
+def view_people():
+    with open("options.txt", "r") as people_file:
+        people = []
+        
+        lines = people_file.read().splitlines()
+        
+        for line in lines:
+            fields = line.split(",")
+            people.append(fields)
+        
+    print("List of People")
+    
+    for person in people:
+        print("First Name: {0}, Last Name: {1}, Age: {2}, Team: {3}".format(person[0], person[1], person[2], person[3], ))
+
 
 def person_loop():
     while True:
@@ -26,7 +43,7 @@ def person_loop():
         if option == "1":
             add_person()
         elif option == "2":
-            print("You selected 'View People'")
+            view_people()
         elif option == "3":
             print("You selected 'Stats'")
         elif option == "4":
